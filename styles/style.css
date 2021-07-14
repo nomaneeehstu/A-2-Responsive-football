@@ -2,22 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* common section */
+
 body{
     font-family: 'Poppins', sans-serif;
     margin:0px;
 }
 
-/* header section */
-header{
-    display: flex;
-    background-color:  #3a0774;
-margin-bottom: 85px;
-}
-.top-section{
-    width: 50%;
-    margin-left: 156px;
-    margin-top: 207px;
-}
+
+
 .button{
     text-decoration: none;
     border-radius: 20px;
@@ -27,6 +19,22 @@ margin-bottom: 85px;
     font-weight: 700;
 
 }
+
+/* --------------------
+     header section 
+----------------------*/
+
+header{
+    display: flex;
+    background-color:  #3a0774;
+    margin-bottom: 85px;
+}
+.top-section{
+    width: 50%;
+    margin-left: 156px;
+    margin-top: 207px;
+}
+
 .top-section img{
     width: 556.01px;
     height: 438px;
@@ -35,19 +43,30 @@ margin-bottom: 85px;
     margin-bottom: 86px;
 
 }
-
+.top-section:hover img{
+    transform: scale(1.3);
+    transition: transform 2s ease-out;
+}
 .top-text{
     font-size: 64px;
     margin-top: 0px;
     margin-bottom: 27px;
     color: #FFFFFF;
 }
-
-/* players section */
+.top-section:hover .top-text{
+    transform: scale(1.3);
+    transition: transform 2s ease-out;
+    color: rgb(160, 104, 104);
+}
+/*------------------ 
+  players section
+------------------ */
 
 main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
    
 }
 
@@ -64,18 +83,117 @@ main{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 
 }
+.player-img{
+    overflow: hidden;
+}
+.player-img:hover img{
+    transform: scale(1.5);
+    transition: transform 2s ease-out;
+}
 .player .player-img img{
     width: 300px;
     height: 256px;
     width: 100%;
+   
 }
 .player-name{
     font-weight: bold;
     font-size: 28px;
     line-height: 40px;
+    color: #530909;
 }
 .player-detail{
     font-size: 16px;
     color: #6C6C6C;
     text-align: justify;
+}
+
+/* last-section */
+
+.last-content{
+    display: flex;
+
+}
+.last-section{
+    width: 50%;
+    margin-left: 182px;
+    margin-top: 207px;
+}
+.last-section img{
+    width: 567px;
+    height: 427px;
+    margin-left: 40px;
+    margin-right: 150px;
+}
+.last-section-heading{
+    font-size: 41px;
+}
+.last-section-text{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/* Gallery_Section */
+
+
+.galllery-heading{
+    font-size: 48px;
+    text-align: center;
+    color: saddlebrown;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.galllery-heading:hover{
+    transform: scale(1.3);
+    transition: transform 2s ease-in-out;
+    color: darkmagenta;
+}
+.gallery-thumbnail:hover img{
+    transform: scale(1.3);
+    transition: transform 2s ease-in-out;
+}
+.gallery-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.gallery-thumbnail img{
+    width: 350px;
+    height: 256px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.gallery-thumbnail{
+overflow: hidden;
+background-color: darkslategray;
+}
+
+
+
+/* Buttom logo section */
+
+.football-logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 483.87px;
+    height: 110px;
+    margin-top: 158px;
+}
+
+/* footer-section */
+
+footer{
+    text-align: center;
+    background-color: #3a0774;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.font-icon{
+   margin-left: 10px;
+   margin-bottom: 20px;
 }
